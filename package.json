@@ -1,0 +1,45 @@
+{
+  "name": "@zenginehq/react-sdk",
+  "version": "0.0.1",
+  "description": "Zengine Plugins 2.0 ReactJS SDK",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "echo 'passing!'",
+    "lint": "tslint src/**/*.ts --project tsconfig.json --fix -q"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ZengineHQ/zengine-sdk.git"
+  },
+  "keywords": [
+    "zengine",
+    "plugin",
+    "reactjs",
+    "sdk"
+  ],
+  "author": "Ben Steward <ben.steward@wizehive.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZengineHQ/react-sdk/issues"
+  },
+  "homepage": "https://github.com/ZengineHQ/react-sdk#readme",
+  "devDependencies": {
+    "tslint": "^5.20.1",
+    "tslint-config-standard": "^9.0.0",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.22",
+    "@types/react-dom": "^16.9.5",
+    "@zenginehq/zengine-sdk": "github:ZengineHQ/zengine-sdk",
+    "tslib": "^1.10.0"
+  },
+  "peerDependencies": {
+    "react": "latest",
+    "react-dom": "latest"
+  }
+}
